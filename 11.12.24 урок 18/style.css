@@ -1,0 +1,41 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input:hover,
+  textarea:hover {
+    border-color: #007bff;
+  }
+  
+  input:disabled,
+  textarea[readonly] {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    cursor: not-allowed;
+  }
+  
+  input:required:valid {
+    border-color: #28a745; /* Зеленый для валидных полей */
+  }
+  
+  input:required:invalid {
+    border-color: #dc3545; /* Красный для невалидных полей */
+  }

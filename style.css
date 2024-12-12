@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cadetblue;
+}
+header{
+    background-color: aqua ;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    justify-content:space-between;
+}
+.header ul li{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+.pro1 {
+    display: flex;
+    align-items: center; /* Выровнять элементы по вертикали */
+}
+
+.pro1 img {
+    margin-right: 10px; /* Отступ между изображением и текстом */
+    margin: 10px;
+}
+.pro2 {
+    display: flex;
+   
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    gap: 10px; /* Отступ между элементами */
+}
+
+.pro2 img {
+    margin-left: 10px; /* Отступ между изображением и текстом */
+   margin: 10px;
+}
+/* Основные стили для main */
+main {
+    background-color: #f0f0f0; /* Цвет фона основного блока */
+    padding: 20px;
+}
+
+/* Стилизация карточек */
+.cards {
+    display: flex; /* Карточки идут в одну строку */
+    gap: 20px; /* Отступ между карточками */
+}
+
+.card {
+    background-color: white; /* Цвет фона каждой карточки */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+    overflow: hidden; /* Чтобы скрыть переполняющий контент */
+    width: 300px; /* Ширина одной карточки */
+    text-align: center; /* Центрирование содержимого */
+}
+
+.card img {
+    width: 100%; /* Изображение заполняет всю ширину карточки */
+    object-fit: cover; /* Сохранение пропорций изображения */
+    height: 200px; /* Высота изображения */
+}
+
+.card-name h2 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.card-description p {
+    color: black; /* Основной цвет текста описания */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+/* Изменение цвета текста при наведении на карточку */
+.card:hover .card-description p {
+    color: red;
+}
+/* Общие стили для футера */
+.footer {
+    background-color: #333; /* Темный фон */
+    color: #fff; /* Белый текст */
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение контента */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+/* Стили для контактной информации */
+.foote-contant ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+}
+
+.foote-contant li {
+    margin-bottom: 10px; /* Межстрочный интервал */
+}
+
+.foote-contant a {
+    color: inherit; /* Наследование цвета текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.foote-contant a:hover {
+    color: #ffc107; /* Желтый цвет при наведении */
+}
